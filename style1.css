@@ -1,0 +1,214 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #040203;
+    color: #a9b6c3;
+    font-family: 'Roboto', sans-serif;
+
+}
+.container{
+    margin: 20px 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+}
+
+.headings{
+    color: #74839b;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+.seperator{
+    height: 4px;
+    background-color: #966844;
+    border-radius: 18px;
+    opacity: 0.8;
+}
+
+.left{
+    /* border: blue 2px solid; */
+    display: flex  ;
+    flex-direction: column;
+    border-top-left-radius: 20px ;
+}
+.photo::before{
+    content: "";
+    background: url(img/picture.jpeg) no-repeat center center/cover;
+    border-radius: 20px ;
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 30rem;
+    height: 38em;
+    z-index: -1; 
+}
+.photo{
+    position: sticky;
+    top: 0px;
+    z-index: -1;
+}
+.info::before{
+    content: "";
+    background: black;
+    position: absolute;
+    top: px;
+    left: auto;
+    width: 30em;
+    height: 20em;
+    opacity: 0.5;
+    z-index: -1; 
+}
+.info{
+    margin-top: 500px;
+    position: sticky;
+    top: 0px;
+}
+.info p{
+    color: #a9b6c3;
+    padding: 20px 30px;
+}
+.info hr{
+    width: 60%;
+    height: 3px;
+    border: none;
+}
+.contact{
+    /* border: orangered 3px solid; */
+    margin-left: 20px;
+    padding-top: 100px;
+    position: sticky;
+    top: 250px;
+}
+.contact p{
+    color: #a9b6c3;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.cdet{
+    display: flex;
+    margin-top: 30px;
+}
+.cdet a{
+    text-decoration: none;
+    color: #966844;
+}
+.cdet a:hover{
+    color: #a9b6c3;
+}
+
+.right{
+    /* border: rgb(23, 161, 69) 2px solid; */
+    display: flex;
+    flex-direction: column;
+}
+.fname{
+    font-size: 8em;
+    font-weight: 400;
+    color: #74839b;
+    padding-right: 10rem;
+    text-align: end;
+    margin-top: 40px;
+}
+.lname{
+    font-size: 4em;
+    font-weight: 400;
+    color: #74839b;
+    text-align: end;
+    padding-right:10rem ;
+    margin-bottom: 30px;
+}
+#mains1, #mains2{
+    height: 3px;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+}
+
+#title{
+    font-size: 35px;
+    color: #a9b6c3;
+    margin-top: 2px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    border: #966844 2px solid;
+    /* background-color: #74523a; */
+    padding: 50px 50px;
+    margin: 40px 20px;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+.box a{
+    text-decoration: none;
+    color: #a9b6c3;
+}
+.skills, .education, .projects{
+    margin-top: 50px ;
+    border: #a9b6c3 1px solid ;
+    margin-left: 50px ;
+    padding-bottom: 30px;
+}
+.skills ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    margin-left: 70px;
+    margin-top: 40px;
+    list-style: square;
+}
+.skills ul li{
+    margin: 20px 20px;
+    width: 200px;
+    
+}
+
+.education li{
+    display: grid;
+    grid-template-areas: 
+    'qual qual qual'
+    'college college marks'
+    'year year year';
+    margin-bottom: 20px;
+    list-style: square;
+
+}
+.qual{
+    grid-area: qual;
+    font-size: 20px;
+    color: #a07351;
+}
+.college{
+    grid-area: college;
+    font-size: 17px;
+}
+.year{
+    grid-area: year;
+    font-size: 17px;
+}
+.marks{
+    grid-area: marks;
+    font-size: 17px;
+}
+
+.projects li{
+    list-style: none;
+}
+.projects li h4{
+    font-size: 20px;
+    color: #a07351;
+}
+
+.projects li p{
+    font-size: 17px;
+}
